@@ -1,0 +1,445 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Template</title>
+		<link href="shadow.css" rel="stylesheet" type="text/css"/><!-- refrencs master style sheet-->
+		<style type="text/css" media="print">
+			#wrap {visibility: hidden; display: none;}
+		</style><!-- to prevent printing of the navbar as this is ment to be a printer freindly page-->
+		
+	</head>
+	
+	<body class="all">
+		<div id="wrap">
+		  <ul class="navbar">
+			 <li><a href="Index.html">Home</a></li>
+			 <li><a href="About.html">About</a>
+				<!--<ul>				   
+				   <li><a href="#">Mage: the Awakening</a></li>				   
+				   <li><a href="#">Changeling: The Lost</a></li>
+				</ul>   -->      
+			 </li>
+			 <li><a href="Contacts.html">Contacts</a>
+				<!--<ul>
+				   <li><a href="#" >Dublin</a></li>
+				   <li><a href="#">Domain Creation</a></li>
+				   
+				</ul>-->         
+			 </li>
+			 <li><a href="Resources.html">Resources</a>
+				<ul>
+				   <li><a href="gallary.html">Gallery</a></li>
+				   <li><a href="Character_Sheet_System.html">Character Sheets online</a></li>
+				   <li><a href="#">Character Sheets Offline</a></li>
+				</ul>         
+			 </li>
+			 <li><a href="Social.html">Social</a>
+				<!--<ul>
+				   <li><a href="#">Facebook</a></li>
+				   <li><a href="#">Forums</a></li>
+				   <li><a href="#">Wiki</a></li>
+				   
+				</ul>-->         
+			 </li>
+			
+		  </ul>
+		</div>
+	
+		<div id="main">
+			<script type="text/javascript" src="charsheet.js"></script>
+			
+			<div id="particulars" class="attBlock">
+				<form method="post" action="#">
+				<span id="first" class="elem">Player Name:<input id="pName"  class="box" name="pName"/>
+					<button id="SubA" name="go" type="button" onclick="returnWord('pName','first','SubA')">Commit</button>
+				</span>
+				<span id="second" class="elem">Character:<input id="cName" class="box" name="cName"/>
+					<button id="SubB" name="go" type="button" onclick="returnWord('cName','second','SubB')">Commit</button>
+				</span>
+				<span id="third" class="elem">Player Id:<input id="IdNumber" class="box" name="ID"/>
+					<button id="SubC" name="go" type="button" onclick="returnWord('IdNumber','third','SubC')">Commit</button>
+				</span>
+				</form>
+			</div>
+			<div id="particularsB" class="attBlock">
+				<form method="post" action="#">
+				<span id="fourth" class="elem">Concept:<input id="concept" class="box" name="concept"/>
+					<button id="SubD" name="go" type="button" onclick="returnWord('concept','fourth','SubD')">Commit</button>
+				</span>
+				<span id="fifth" class="elem">Virtue:<input id="virtue" class="box" name="virtue"/>
+					<button id="SubE" name="go" type="button" onclick="returnWord('virtue','fifth','SubE')">Commit</button>
+				</span>
+				<span id="sixth" class="elem">Vice:<input id="vice" class="box" name="vice"/>
+					<button id="SubF" name="go" type="button" onclick="returnWord('vice','sixth','SubF')">Commit</button>
+				</span>
+				</form>
+			</div>
+			<div id="particularsC" class="attBlock">
+				<form method="post" action="#">
+				<span id="seventh" class="elem">Chroncile:<input id="chronicle"  name="chronicle" class="box" value="Shadowplay Dublin"/>
+					<button id="SubG" name="go" type="button" onclick="returnWord('chronicle','seventh','SubG')">Commit</button>
+				</span>
+				<span id="eight" class="elem">Faction:<input id="faction" class="box" name="faction"/>
+					<button id="SubH" name="go" type="button" onclick="returnWord('faction','eight','SubH')">Commit</button>
+				</span>
+				
+				</form>
+			</div>
+			
+			<hr class="aLine"/>
+			
+			<div id="mental" class="attBlock">
+				<span id="Intell" class="elem">Intelligecne:<select id="Intelligence">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3></option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="intButton" name="go" type="button" onclick="inbox('Intelligence','Intell','intButton')">Commit</button>
+				</span>
+				<span id="Wit" class="elem">Witts:<select id="Witts">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3></option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="witButton" name="go" type="button" onclick="inbox('Witts','Wit','witButton')">Commit</button>
+				</span>
+				<span id="Res" class="elem">Resolve:<select id="Resolve">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3></option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="resButton" name="go" type="button" onclick="inbox('Resolve','Res','resButton')">Commit</button>
+				</span>						
+				
+			</div>
+			
+			<div id="physical" class="attBlock">
+				<span id="Str" class="elem">Strength:<select id="Strength">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3></option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="strButton" name="go" type="button" onclick="inbox('Strength','Str','strButton')">Commit</button>
+				</span>
+				<span id="Dex" class="elem">Dexterity:<select id="Dexterity">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3></option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="dexButton" name="go" type="button" onclick="inbox('Dexterity','Dex','dexButton')">Commit</button>
+				</span>
+				<span id="Sta" class="elem">Stamina:<select id="Stamina">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3></option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="staButton" name="go" type="button" onclick="inbox('Stamina','Sta','staButton')">Commit</button>
+				</span>						
+				
+			</div>
+		
+			
+			<div id="social" class="attBlock">
+				<span id="Pre" class="elem">Presence:<select id="Presence">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="preButton" name="go" type="button" onclick="inbox('Presence','Pre','preButton')">Commit</button>
+				</span>
+				<span id="Man" class="elem">Manipulation:<select id="Manipulation">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="manButton" name="go" type="button" onclick="inbox('Manipulation','Man','manButton')">Commit</button>
+				</span>
+				<span id="Comp" class="elem">Composure:<select id="Composure">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="compButton" name="go" type="button" onclick="inbox('Composure','Comp','compButton')">Commit</button>
+				</span>						
+				
+			</div>
+			<hr class="aLine"/>
+			
+			<div id="mentalSk" class="attBlock">
+				<span id="Aca" class="elem">Academics:<select id="Academics">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="acaButton" name="go" type="button" onclick="inbox('Academics','Aca','acaButton')">Commit</button>
+				</span>
+				<span id="Puter" class="elem">Computer:<select id="Computer">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="puterButton" name="go" type="button" onclick="inbox('Computer','Puter','puterButton')">Commit</button>
+				</span>
+				<span id="Craf" class="elem">Crafts:<select id="Crafts">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="crafButton" name="go" type="button" onclick="inbox('Crafts','Craf','crafButton')">Commit</button>
+				</span>
+				<span id="Inves" class="elem">Investigation:<select id="Investigation">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="invesButton" name="go" type="button" onclick="inbox('Investigation','Inves','invesButton')">Commit</button>
+				</span>
+				<span id="Med" class="elem">Medicine:<select id="Medicine">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="medButton" name="go" type="button" onclick="inbox('Medicine','Med','medButton')">Commit</button>
+				</span>	
+				<span id="Occ" class="elem">Occult:<select id="Occult">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="occButton" name="go" type="button" onclick="inbox('Occult','Occ','occButton')">Commit</button>
+				</span>	
+				<span id="Pol" class="elem">Politics:<select id="Politics">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="polButton" name="go" type="button" onclick="inbox('Politics','Pol','polButton')">Commit</button>
+				</span>	
+				<span id="Sci" class="elem">Science:<select id="Science">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="sciButton" name="go" type="button" onclick="inbox('Science','Sci','sciButton')">Commit</button>
+				</span>						
+				
+			</div>
+			
+			<div id="physicalSk" class="attBlock">
+				<span id="Ath" class="elem">Athletics:<select id="Athletics">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="athButton" name="go" type="button" onclick="inbox('Athletics','Ath','athButton')">Commit</button>
+				</span>
+				<span id="Brw" class="elem">Brawl:<select id="Brawl">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="brwButton" name="go" type="button" onclick="inbox('Brawl','Brw','brwButton')">Commit</button>
+				</span>
+				<span id="Dri" class="elem">Drive:<select id="Drive">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="driButton" name="go" type="button" onclick="inbox('Drive','Dri','driButton')">Commit</button>
+				</span>		
+				<span id="Fir" class="elem">Firearms:<select id="Firearms">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="FirButton" name="go" type="button" onclick="inbox('Firearms','Fir','FirButton')">Commit</button>
+				</span>	
+				<span id="Lar" class="elem">Larceny:<select id="Larceny">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="larButton" name="go" type="button" onclick="inbox('Larceny','Lar','larButton')">Commit</button>
+				</span>	
+				<span id="Sth" class="elem">Stealth:<select id="Stealth">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="sthButton" name="go" type="button" onclick="inbox('Stealth','Sth','sthButton')">Commit</button>
+				</span>	
+				<span id="Surv" class="elem">Survival:<select id="Survival">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="survButton" name="go" type="button" onclick="inbox('Survival','Surv','survButton')">Commit</button>
+				</span>	
+				<span id="Wep" class="elem">Weaponry:<select id="Weaponry">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="wepButton" name="go" type="button" onclick="inbox('Weaponry','Wep','wepButton')">Commit</button>
+				</span>					
+				
+			</div>
+		
+			
+			<div id="socialSk" class="attBlock">
+				<span id="AnKen" class="elem">Animal Ken:<select id="AnimalKen">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="ankenButton" name="go" type="button" onclick="inbox('AnimalKen','AnKen','ankenButton')">Commit</button>
+				</span>
+				<span id="Emp" class="elem">Empathy:<select id="Empathy">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="empButton" name="go" type="button" onclick="inbox('Empathy','Emp','empButton')">Commit</button>
+				</span>
+				<span id="Exp" class="elem">Expression:<select id="Expression">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="expButton" name="go" type="button" onclick="inbox('Expression','Exp','expButton')">Commit</button>
+				</span>	
+				<span id="Intim" class="elem">Intimidation:<select id="Intimidation">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="intimButton" name="go" type="button" onclick="inbox('Intimidation','Intim','intimButton')">Commit</button>
+				</span>	
+				<span id="Per" class="elem">Persuasion:<select id="Persuasion">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="perButton" name="go" type="button" onclick="inbox('Persuasion','Per','perButton')">Commit</button>
+				</span>	
+				<span id="Soc" class="elem">Socialize:<select id="Socialize">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="socButton" name="go" type="button" onclick="inbox('Socialize','Soc','socButton')">Commit</button>
+				</span>	
+				<span id="Stre" class="elem">Streetwise:<select id="Streetwise">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="streButton" name="go" type="button" onclick="inbox('Streetwise','Stre','streButton')">Commit</button>
+				</span>	
+				<span id="Sub" class="elem">Subterfuge:<select id="Subterfuge">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+					<button id="subButton" name="go" type="button" onclick="inbox('Subterfuge','Sub','subButton')">Commit</button>
+				</span>						
+				
+			</div>			
+			
+			
+		</div>
+	
+	
+	</body>
+</html>
